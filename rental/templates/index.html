@@ -23,26 +23,46 @@
                         <i class='bx bxs-lock-alt' ></i>
                     </div>
                     <div class="forgot-link">
-                        <a href="#">Forgot Password?</a>
+                        <a href="#">비밀번호를 잊으셨나요?</a>
                     </div>
                     <button type="submit" class="btn">Login</button>
                 </form>
             </div>
 
             <div class="form-box register">
-                <form action="#">
+                <form action="/signup" method="POST">
                     <h1>Welcome</h1>
                     <div class="input-box">
-                        <input type="text" placeholder="Username" required>
+                        <input type="text" name="username" placeholder="Username" required>
                         <i class='bx bxs-user'></i>
                     </div>
                     <div class="input-box">
-                        <input type="email" placeholder="Email" required>
+                        <input type="email" name="email" placeholder="Email" required>
                         <i class='bx bxs-envelope' ></i>
                     </div>
                     <div class="input-box">
-                        <input type="password" placeholder="Password" required>
+                        <input type="password" name="password" placeholder="Password" required>
                         <i class='bx bxs-lock-alt' ></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="이름" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="address" placeholder="주소" required>
+                        <i class='bx bxs-map'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" name="phone" placeholder="전화번호" required>
+                        <i class='bx bxs-phone'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="date" name="previousUsageDate" placeholder="이전 캠핑카 사용 날짜">
+                        <i class='bx bxs-calendar'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="previousCampingCarType" placeholder="이전 사용 캠핑카 종류">
+                        <i class='bx bxs-car'></i>
                     </div>
                     <button type="submit" class="btn">회원가입</button>
                 </form>
@@ -51,7 +71,7 @@
             <div class="toggle-box">
                 <div class="toggle-panel toggle-left">
                     <h1>Hello, Welcome!</h1>
-                    <p>이미 계정이 있으신가요?</p>
+                    <p>계정이 없으신가요?</p>
                     <button class="btn register-btn">Register</button>
                 </div>
 
